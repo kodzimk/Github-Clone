@@ -1,11 +1,33 @@
 import classes from './main_side.module.css'
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
 
 const MainSide = () =>{
+
+    const [input, setInput] = useState("")
+
+    function onAsking(e:React.ChangeEvent<HTMLInputElement>){
+        setInput(e.target.value)
+    }
+
+    function onSubmit(e:React.FormEvent<HTMLFormElement>){
+        e.preventDefault()
+        axios.get(`http://localhost:8000/assistant/${input}`)
+        .then(res => {
+            console.log(res.data)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+    }
+
     return (
         <div className={classes.main_side_container}>
             <h2>Home</h2>
-            <input type="text" placeholder='Ask Copilot...' className={classes.main_side_input} />
+            <form onSubmit={onSubmit}>
+                <input type="text" placeholder='Ask Copilot...' className={classes.main_side_input} value={input} onChange={onAsking}/>
+                <button type='submit'>Ask</button>
+            </form>
             <div className = {classes.main_create_input_container}>
                 <div className = {classes.main_create_input_container_item}>
                     <h3>Create a profile README for me</h3>

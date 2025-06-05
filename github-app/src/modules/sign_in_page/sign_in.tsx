@@ -27,10 +27,7 @@ const SignIn = () => {
             return;
         }
         const user = JSON.parse(localStorage.getItem(`${state.username}`) as string) as GlobalProps;
-        
-        console.log(user.password)
-        console.log(state.password)
-       
+
         if(!user){
             alert("User not found");
             return
