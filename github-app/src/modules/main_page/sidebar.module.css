@@ -1,0 +1,115 @@
+.sidebar{
+    width: 20vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 7%;
+    gap: 15px;
+}
+    
+.sidebar_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar_separator{
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+
+.sidebar_item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+}
+
+.sidebar_item_icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.sidebar_item_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+}
+
+.sidebar_item_2_button{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(15, 74, 3);
+    border-radius: 5px;
+    border: 1px solid rgb(42, 249, 1);
+    color: white;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_item_2_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sidebar_item_2_button:hover{
+    background-color: rgb(29, 153, 4);
+    border: 1px solid rgb(42, 249, 1);
+}
+
+.sidebar_item_2_input{
+    width: 100%;
+    height: 30px;
+    background-color: #04141e;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar_item_2_input:focus{
+    outline: none;
+    border: 1px solid rgb(30, 124, 247);
+}
+
+.sidebar_item_2_repositories{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar_item_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sidebar_item_3_input{
+    width: 100%;
+    height: 30px;
+    background-color: #04141e;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}

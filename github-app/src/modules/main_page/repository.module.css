@@ -1,0 +1,17 @@
+.repository_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.repository_icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.repository_container h3{
+    font-size: 0.8rem;
+}

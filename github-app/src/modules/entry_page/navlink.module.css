@@ -1,0 +1,26 @@
+.nav__link_decoration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1px;
+
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+#navlink{
+    color: white;
+}
+
+
+.nav__link_decoration:hover{
+    color: rgb(114, 110, 110);
+}
+
+.arrow_down{
+width: 25px;
+height:12px;
+margin-top: 5px;
+}
